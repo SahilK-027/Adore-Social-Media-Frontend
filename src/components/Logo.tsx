@@ -45,7 +45,7 @@ function Logo() {
   return (
     <primitive
       ref={logoRef}
-      position={[0, 0.5, 0]}
+      position={[0, 0.5, -1.0]}
       scale={[0.0, 0.0, 0.0]}
       object={scene}
     />
