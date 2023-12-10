@@ -16,7 +16,7 @@ function Logo() {
       mousePos.current.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
       // Update the target rotation based on the mouse position
-      targetRotation.current.x = mousePos.current.y;
+      targetRotation.current.x = mousePos.current.y * 0.4;
       targetRotation.current.y = mousePos.current.x;
     };
 
@@ -31,9 +31,9 @@ function Logo() {
     // Apply damping to the rotation
     if (logoRef.current) {
       logoRef.current.rotation.x +=
-        (targetRotation.current.x - (logoRef.current.rotation.x ?? 0)) * 0.1;
+        (targetRotation.current.x - (logoRef.current.rotation.x ?? 0)) * 0.2;
       logoRef.current.rotation.y +=
-        (targetRotation.current.y - (logoRef.current.rotation.y ?? 0)) * 0.1;
+        (targetRotation.current.y - (logoRef.current.rotation.y ?? 0)) * 0.2;
     }
 
     const scaleProgress = Math.min(clock.getElapsedTime() * 1.5, 1.0);
