@@ -1,0 +1,18 @@
+.landing-page-overlay-container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .landing-page-header {
+        .landing-page-logo {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin: 0px 5px;
+            }
+        }
+    }
+}

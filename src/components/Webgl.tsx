@@ -8,7 +8,6 @@ const Webgl = () => {
             shadows
             camera={{ position: [0, 0, -10], fov: 35, near: 1, far: 1000 }}
         >
-            <color attach="background" args={["transparent"]} />
             <ambientLight color={"#ffd2f2"} intensity={0.5} />
             <directionalLight
                 color={"#ff7474"}
