@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
-import "./LandingPageOverlay.scss";
-import logo from "../../assets/icon.png";
 import { Link } from "react-router-dom";
 import GradientEffect from "../GradientEffect/GradientEffect";
+import logo from "../../assets/icon.png";
+import "./LandingPageOverlay.scss";
 
 const LandingPageHeader = () => {
   return (
