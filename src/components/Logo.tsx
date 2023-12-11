@@ -4,7 +4,7 @@ import { useGLTF } from "@react-three/drei";
 import { Object3D } from "three";
 
 function Logo() {
-  const { scene } = useGLTF("/models/adore3.glb");
+  const { scene } = useGLTF("/models/adore.glb");
 
   const mousePos = useRef({ x: 0, y: 0 });
   const targetRotation = useRef({ x: 0, y: 0 });
@@ -37,8 +37,8 @@ function Logo() {
     }
 
     const scaleProgress = Math.min(clock.getElapsedTime() * 1.5, 1.0);
-    const scaleFactorX = scaleProgress * 0.0947;
-    const scaleFactorYZ = scaleProgress * 0.1;
+    const scaleFactorX = scaleProgress * 0.078;
+    const scaleFactorYZ = scaleProgress * 0.08;
     logoRef.current?.scale.set(scaleFactorX, scaleFactorYZ, scaleFactorYZ);
   });
 

@@ -15,7 +15,6 @@ const Webgl = () => {
         color={"#ff7474"}
         position={[5, 5, -5]}
         intensity={0.8}
-        castShadow
         shadow-mapSize-width={1024}
         shadow-mapSize-height={1024}
         shadow-camera-far={50}
