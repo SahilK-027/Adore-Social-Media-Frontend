@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 import "./LandingPageOverlay.scss";
 import logo from "../../assets/icon.png";
+import { Link } from "react-router-dom";
 
 const LandingPageHeader = () => {
   return (
@@ -11,8 +12,12 @@ const LandingPageHeader = () => {
         <h1 className="brand-name">Adore</h1>
       </div>
       <div className="landing-page-login-signup-btn">
-        <button> Log In </button>
-        <button> Sign Up </button>
+        <Link to="/login">
+          <button className="landing-page-login-btn"> Log In </button>
+        </Link>
+        <Link to="/login">
+          <button className="landing-page-signup-btn"> Sign Up </button>
+        </Link>
       </div>
     </div>
   );
@@ -59,9 +64,11 @@ const LandingPageHeroText = () => {
         Connect, share, and feel. Our social platform cultivates meaningful
         connections, fostering a vibrant community.
       </animated.p>
-      <animated.button style={btnAnimationProps}>
-        Create Your Free Account
-      </animated.button>
+      <Link to="/login">
+        <animated.button style={btnAnimationProps}>
+          Create Your Free Account
+        </animated.button>
+      </Link>
     </div>
   );
 };

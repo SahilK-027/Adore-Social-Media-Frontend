@@ -17,6 +17,7 @@
     "r3f-perf": "^7.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.1",
     "react-spring": "^9.7.3",
     "sass": "^1.69.5",
     "three": "^0.149.0"

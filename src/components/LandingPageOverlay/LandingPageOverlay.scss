@@ -35,25 +35,27 @@
             outline: none;
             border: 1.5px solid #e85182;
             transition: all 0.3s ease;
+        }
 
-            &:first-child {
-                background-color: transparent;
-                color: #e85182;
-            }
+        .landing-page-login-btn {
+            background-color: transparent;
+            color: #e85182;
+            transition: all 0.3s ease;
+        }
 
-            &:last-child {
-                background: #1f2937;
-                border: 1.5px solid #1f2937;
-                color: #fff;
-            }
+        .landing-page-signup-btn {
+            background: #1f2937;
+            border: 1.5px solid #1f2937;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
 
-            &:hover {
-                opacity: 0.9;
-            }
+        .landing-page-login-btn:hover {
+            opacity: 0.9;
+        }
 
-            &:last-child:hover {
-                background: #000;
-            }
+        .landing-page-signup-btn:hover {
+            background: #000;
         }
     }
 
