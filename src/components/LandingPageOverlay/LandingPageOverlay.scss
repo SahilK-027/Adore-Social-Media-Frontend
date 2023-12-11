@@ -59,54 +59,6 @@
         }
     }
 
-    .landing-page-gradient {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: calc(40% - 250px);
-        left: calc(50% - 250px);
-        gap: 40px;
-
-        .gradient-box {
-            width: 250px;
-            height: 250px;
-            filter: blur(120px);
-        }
-
-        .gradient-top {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 40px;
-
-            .gradient-box-red {
-                background: rgba(255, 0, 0, 0.3);
-            }
-
-            .gradient-box-pink {
-                background: #ff538a56;
-            }
-        }
-
-        .gradient-bottom {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 40px;
-
-            .gradient-box-magenta {
-                background: rgba(255, 0, 255, 0.3);
-            }
-
-            .gradient-box-purple {
-                background: #7344ff3f;
-            }
-        }
-    }
-
     .landing-page-hero-text {
         display: flex;
         flex-direction: column;
@@ -172,40 +124,7 @@
         .landing-page-header {
             padding: 15px;
         }
-
-
-        .landing-page-gradient {
-            top: calc(40% - 150px);
-            left: calc(50% - 150px);
-            gap: 40px;
-
-            .gradient-box {
-                width: 150px;
-                height: 150px;
-                filter: blur(120px);
-            }
-
-            .gradient-top {
-                .gradient-box-red {
-                    background: rgba(255, 0, 0, 0.4);
-                }
-
-                .gradient-box-pink {
-                    background: #ff53899f;
-                }
-            }
-
-            .gradient-bottom {
-                .gradient-box-magenta {
-                    background: rgba(255, 0, 255, 0.4);
-                }
-
-                .gradient-box-purple {
-                    background: #7344ff71;
-                }
-            }
-        }
-
+        
         .landing-page-hero-text {
             padding: 0px 5px;
             top: 50%;

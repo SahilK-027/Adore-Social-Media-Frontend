@@ -3,6 +3,7 @@ import { useSpring, animated } from "react-spring";
 import "./LandingPageOverlay.scss";
 import logo from "../../assets/icon.png";
 import { Link } from "react-router-dom";
+import GradientEffect from "../GradientEffect/GradientEffect";
 
 const LandingPageHeader = () => {
   return (
@@ -18,21 +19,6 @@ const LandingPageHeader = () => {
         <Link to="/login">
           <button className="landing-page-signup-btn"> Sign Up </button>
         </Link>
-      </div>
-    </div>
-  );
-};
-
-const GradientEffect = () => {
-  return (
-    <div className="landing-page-gradient">
-      <div className="gradient-top">
-        <div className="gradient-box gradient-box-red"></div>
-        <div className="gradient-box gradient-box-pink"></div>
-      </div>
-      <div className="gradient-bottom">
-        <div className="gradient-box gradient-box-magenta"></div>
-        <div className="gradient-box gradient-box-purple"></div>
       </div>
     </div>
   );
