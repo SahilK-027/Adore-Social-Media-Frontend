@@ -1,8 +1,8 @@
 import { Canvas } from "@react-three/fiber";
-import { Environment, Grid, OrbitControls } from "@react-three/drei";
+import { Environment, Float, Grid, OrbitControls } from "@react-three/drei";
 
 import Logo from "./Logo.jsx";
-import { Perf } from "r3f-perf";
+// import { Perf } from "r3f-perf";
 
 const Webgl = () => {
   return (
@@ -30,7 +30,9 @@ const Webgl = () => {
         decay={2}
         position={[0, 0, 0]}
       />
-      <Logo />
+      <Float>
+        <Logo />
+      </Float>
       <Environment files="./maps/dam_wall_1k.hdr" background={false} blur={0} />
       <Grid
         sectionSize={1}
@@ -50,7 +52,7 @@ const Webgl = () => {
         enableDamping={true}
         enableRotate={false}
       />
-      <Perf />
+      {/* <Perf position={"bottom-left"} /> */}
     </Canvas>
   );
 };

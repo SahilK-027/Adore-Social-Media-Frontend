@@ -15,7 +15,6 @@ function Logo() {
       mousePos.current.x = (event.clientX / window.innerWidth) * 2 - 1;
       mousePos.current.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
-      // Update the target rotation based on the mouse position
       targetRotation.current.x = mousePos.current.y * 0.4;
       targetRotation.current.y = mousePos.current.x;
     };
@@ -37,15 +36,15 @@ function Logo() {
     }
 
     const scaleProgress = Math.min(clock.getElapsedTime() * 1.5, 1.0);
-    const scaleFactorX = scaleProgress * 0.078;
-    const scaleFactorYZ = scaleProgress * 0.08;
+    const scaleFactorX = scaleProgress * 0.079;
+    const scaleFactorYZ = scaleProgress * 0.079;
     logoRef.current?.scale.set(scaleFactorX, scaleFactorYZ, scaleFactorYZ);
   });
 
   return (
     <primitive
       ref={logoRef}
-      position={[0, 0.5, -1.0]}
+      position={[0, 0.9, -1.0]}
       scale={[0.0, 0.0, 0.0]}
       object={scene}
     />

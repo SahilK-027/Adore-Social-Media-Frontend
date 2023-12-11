@@ -4,15 +4,55 @@
     height: 100vh;
     top: 0;
     left: 0;
+    z-index: 2;
 
     .landing-page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 180px;
+
         .landing-page-logo {
-            padding: 22px;
             display: flex;
             align-items: center;
 
             img {
                 margin: 0px 5px;
+            }
+        }
+
+        button {
+            position: relative;
+            z-index: 2;
+            pointer-events: all;
+            cursor: pointer;
+            padding: 0.5rem 1.5rem;
+            font-size: 15px;
+            margin-left: 8px;
+            font-weight: 600;
+            border: none;
+            border-radius: 25px;
+            outline: none;
+            border: 1.5px solid #e85182;
+            transition: all 0.3s ease;
+
+            &:first-child {
+                background-color: transparent;
+                color: #e85182;
+            }
+
+            &:last-child {
+                background: #1f2937;
+                border: 1.5px solid #1f2937;
+                color: #fff;
+            }
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+            &:last-child:hover {
+                background: #000;
             }
         }
     }
@@ -22,7 +62,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: calc(50% - 250px);
+        top: calc(40% - 250px);
         left: calc(50% - 250px);
         gap: 40px;
 
@@ -40,7 +80,7 @@
             gap: 40px;
 
             .gradient-box-red {
-                background: rgba(255, 0, 0, 0.4);
+                background: rgba(255, 0, 0, 0.3);
             }
 
             .gradient-box-pink {
@@ -56,11 +96,129 @@
             gap: 40px;
 
             .gradient-box-magenta {
-                background: rgba(255, 0, 255, 0.4);
+                background: rgba(255, 0, 255, 0.3);
             }
 
             .gradient-box-purple {
                 background: #7344ff3f;
+            }
+        }
+    }
+
+    .landing-page-hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        bottom: 10%;
+        padding: 0px;
+
+        h1 {
+            font-size: 2.7rem;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Jost', sans-serif;
+            line-height: 1;
+
+            span {
+                background: linear-gradient(to right, rgb(248, 87, 166), rgb(255, 88, 88));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                user-select: none;
+            }
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+            margin-top: 40px;
+            max-width: 600px;
+        }
+
+        button {
+            align-self: center;
+            position: relative;
+            z-index: 2;
+            pointer-events: all;
+            cursor: pointer;
+            margin-top: 40px;
+            font-weight: 600;
+            border-radius: 9999px;
+            padding: 0.7rem 2.5rem;
+            background: #1f2937;
+            color: white;
+            font-size: 16px;
+            border: 1px solid #1f2937;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #000;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .landing-page-overlay-container {
+
+        .landing-page-header {
+            padding: 15px;
+        }
+
+
+        .landing-page-gradient {
+            top: calc(40% - 150px);
+            left: calc(50% - 150px);
+            gap: 40px;
+
+            .gradient-box {
+                width: 150px;
+                height: 150px;
+                filter: blur(120px);
+            }
+
+            .gradient-top {
+                .gradient-box-red {
+                    background: rgba(255, 0, 0, 0.4);
+                }
+
+                .gradient-box-pink {
+                    background: #ff53899f;
+                }
+            }
+
+            .gradient-bottom {
+                .gradient-box-magenta {
+                    background: rgba(255, 0, 255, 0.4);
+                }
+
+                .gradient-box-purple {
+                    background: #7344ff71;
+                }
+            }
+        }
+
+        .landing-page-hero-text {
+            padding: 0px 5px;
+            top: 50%;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.09rem;
+                margin-top: 35px;
+            }
+
+            button {
+                margin-top: 35px;
             }
         }
     }
