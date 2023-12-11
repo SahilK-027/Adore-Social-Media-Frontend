@@ -67,7 +67,7 @@
 
         .login-card-bottom {
             padding: 1rem 4rem;
-            padding-bottom: 2rem;
+            padding-bottom: 3rem;
             background: #f9fafb;
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
@@ -87,9 +87,16 @@
                     padding: 8px;
                     margin-bottom: 18px;
                     background-color: #fff;
-                    border: 1px solid #ccc;
+                    border: 1.5px solid #ccc;
                     border-radius: 4px;
                     font-size: 1rem;
+                    outline: none;
+                    transition: all 0.4s ease;
+
+                    &:focus {
+                        color: #e85182;
+                        border: 1.5px solid #e85182;
+                    }
                 }
 
                 ::placeholder {
@@ -140,16 +147,17 @@
 
 @media (max-width: 768px) {
     .login-page-container {
-    
+
         .login-card {
             width: 380px;
-    
+
             .login-card-top {
                 padding: 2rem 3rem;
             }
-    
+
             .login-card-bottom {
                 padding: 1rem 3rem;
+                padding-bottom: 3rem;
             }
         }
     }
