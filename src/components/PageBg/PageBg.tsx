@@ -1,7 +1,7 @@
 import { Grid } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
-const LoginPageBg = () => {
+const PageBg = () => {
   return (
     <Canvas
       shadows
@@ -43,4 +43,4 @@ const LoginPageBg = () => {
   );
 };
 
-export default LoginPageBg;
+export default PageBg;

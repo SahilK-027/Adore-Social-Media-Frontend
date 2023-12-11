@@ -1,5 +1,6 @@
 import "./LoginCard.scss";
 import logo from "../../assets/icon.png";
+import { Link } from "react-router-dom";
 
 const LoginCardTitle = () => {
   return (
@@ -11,7 +12,7 @@ const LoginCardTitle = () => {
         <h4>Log in to Adore</h4>
       </div>
       <p className="login-description">
-        Start sharing moments with few clicks.
+        Share the moments with few clicks.
       </p>
     </div>
   );
@@ -25,21 +26,17 @@ const LoginForm = () => {
 
         <label>Password</label>
         <input type="password" placeholder="Enter your password" required />
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            fontSize: "13px !important",
-          }}
-        ></div>
 
         <button type="submit" className="primary-button sign-in-button">
           Log in with Email
         </button>
       </form>
       <p>
-        Don't have an account? <a>Sign-Up</a>.
+        Don't have an account?{" "}
+        <Link to="/sign-up">
+          <a>Sign Up</a>
+        </Link>
+        .
       </p>
     </div>
   );

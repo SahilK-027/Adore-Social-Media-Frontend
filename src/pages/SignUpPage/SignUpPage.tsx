@@ -1,15 +1,15 @@
 import GradientEffect from "../../components/GradientEffect/GradientEffect";
-import LoginCard from "../../components/LoginCard/LoginCard";
 import PageBg from "../../components/PageBg/PageBg";
+import SignUpCard from "../../components/SignUpCard/SignUpCard";
 
-const LoginPage = () => {
+const SignUpPage = () => {
   return (
     <>
       <PageBg />
       <GradientEffect />
-      <LoginCard />
+      <SignUpCard />
     </>
   );
 };
 
-export default LoginPage;
+export default SignUpPage;
