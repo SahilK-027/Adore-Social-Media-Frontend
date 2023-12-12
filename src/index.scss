@@ -24,6 +24,7 @@ body,
   background: #e85182;
 }
 
+
 body {
   background: #fafafa;
   font-family: 'Inter', sans-serif;
@@ -65,4 +66,8 @@ canvas {
   z-index: 1;
   width: 100vw;
   height: 100vh;
+}
+
+.ant-layout-content {
+  display: none !important;
 }

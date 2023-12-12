@@ -47,8 +47,7 @@ const SideBar: React.FC = () => {
     const handleWindowResize = () => {
       if (window.innerWidth <= 768) {
         setMobile(true);
-      }
-      else{
+      } else {
         setMobile(false);
       }
     };

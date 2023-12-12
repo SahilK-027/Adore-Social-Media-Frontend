@@ -1,0 +1,62 @@
+.trending-posts {
+    position: sticky;
+    top: 20px;
+    width: 100%;
+    background-color: #eff3f4;
+    border-radius: 8px;
+    padding: 16px;
+
+    h1 {
+        font-size: 22px;
+        font-weight: 800;
+        color: #000;
+    }
+
+    .post-item {
+        padding: 10px 2px;
+        border-radius: 8px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .post-item-container {
+        overflow-y: scroll;
+        max-height: 80vh;
+    }
+
+    .post-author {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #536471;
+        font-size: 14px;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .post-message {
+        font-size: 16px;
+        color: #000;
+        font-weight: 400;
+    }
+
+    .post-tags {
+        margin-top: 2px;
+    }
+
+    .tag {
+        display: inline-block;
+        margin-right: 8px;
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .post-likes {
+        color: #f91980;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+}
