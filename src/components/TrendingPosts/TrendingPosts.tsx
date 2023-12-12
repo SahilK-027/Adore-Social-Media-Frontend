@@ -4,7 +4,7 @@ const TrendingPosts = () => {
   const topPosts = [
     {
       author: "@user1",
-      message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      message: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       tags: ["#lorem", "#ipsum"],
       likes: 25,
       time: "1 Nov 2023",
@@ -13,7 +13,7 @@ const TrendingPosts = () => {
       author: "@user2",
       message:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      tags: ["#tempor", "#labore"],
+      // tags: ["#tempor", "#labore"],
       likes: 18,
       time: "2 Nov 2023",
     },
@@ -86,18 +86,18 @@ const TrendingPosts = () => {
   return (
     <div className="trending-posts">
       <h1>What’s happening...?</h1>
-      <div className="post-item-container">
+      <div className="post-item-container wrap">
         {topPosts.map((post, index) => (
-          <div key={index} className="post-item">
+          <div key={index} className="post-item wrap">
             <div className="post-author">
               {" "}
               <p>{post.author}</p>
               <p>{post.time}</p>{" "}
             </div>
-            <div className="post-message">{post.message}</div>
-            <div className="post-tags">
-              {post.tags.map((tag, tagIndex) => (
-                <span key={tagIndex} className="tag">
+            <div className="post-message wrap">{post.message}</div>
+            <div className="post-tags wrap">
+              {post.tags?.map((tag, tagIndex) => (
+                <span key={tagIndex} className="tag wrap">
                   {tag}
                 </span>
               ))}
