@@ -1,5 +1,5 @@
 import LandingPageOverlay from "../../components/LandingPageOverlay/LandingPageOverlay";
-import Webgl from "../../components/Webgl";
+import Webgl from "../../components/Webgl/Webgl";
 const LandingPage = () => {
   return (
     <>

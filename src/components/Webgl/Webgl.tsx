@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Environment, Float, Grid, OrbitControls } from "@react-three/drei";
 
-import Logo from "./Logo.jsx";
+import Logo from "./Logo.js";
 // import { Perf } from "r3f-perf";
 
 const Webgl = () => {

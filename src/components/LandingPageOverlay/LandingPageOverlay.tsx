@@ -52,7 +52,7 @@ const LandingPageHeroText = () => {
         Connect, share, and feel. Our social platform cultivates meaningful
         connections, fostering a vibrant community.
       </animated.p>
-      <Link to="/login">
+      <Link to="/sign-up">
         <animated.button style={btnAnimationProps}>
           Create Your Free Account
         </animated.button>
