@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Galada&family=Inter:wght@400;500;600;700;800;900&family=Jost:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 * {
   margin: 0;
@@ -37,11 +37,11 @@ a {
 }
 
 .brand-name {
-  font-family: 'Galada', cursive;
-  font-weight: 400;
+  font-family: 'Courgette', cursive;
+  font-weight: 600;
   font-size: 30px;
-  margin-top: 6px;
-  line-height: 10px;
+  margin: 0;
+  margin-left: 3px;
 }
 
 @keyframes fade-in {

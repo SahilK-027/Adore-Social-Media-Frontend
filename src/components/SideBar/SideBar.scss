@@ -1,0 +1,150 @@
+.sidebar-brand {
+    .brand-logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        .brand-name {
+            color: #000;
+            margin-left: 3px;
+        }
+    }
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.ant-menu {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    font-size: 18px;
+}
+
+.ant-menu-item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: none !important;
+        font-weight: 600;
+    }
+}
+
+
+.collapsed-sidebar .ant-menu-title-content {
+    text-align: center;
+}
+
+.ant-menu-item-selected {
+    font-weight: bold;
+    border-left: 5px solid #e85182;
+}
+
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px !important;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    border-top: 1px solid #e6e6e6 !important;
+
+    .create-post-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 12px;
+        background-color: #e85182;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 15px;
+        transition: all 0.3s ease;
+        font-weight: 600;
+
+        &:hover {
+            background-color: #de4c7a;
+        }
+
+        i {
+            margin: 0;
+        }
+    }
+
+    .user-avatar {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 15px 0;
+        padding-bottom: 0;
+
+        p {
+            margin: 0;
+        }
+
+        .ant-avatar {
+            margin: 0px;
+        }
+
+        .userName {
+            text-align: left;
+            font-weight: bold;
+            margin-top: 0px;
+            margin-bottom: 4px;
+            color: #000;
+            font-size: 18px;
+        }
+
+        .logout {
+            text-align: left;
+            font-weight: bold;
+            margin-top: 0px;
+            font-size: 14px;
+        }
+    }
+}
+
+.ant-pro-sider-footer {
+    padding: 0px !important;
+}
+
+.log-out-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #1f2937;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+
+    &:hover {
+        background-color: #000;
+    }
+
+    i {
+        margin: 0;
+    }
+}
+
+.ant-avatar{
+    background: #1f2937 !important;
+}
