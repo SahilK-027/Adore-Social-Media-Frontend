@@ -1,5 +1,5 @@
 // Sidebar.tsx
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ProLayout, { MenuDataItem } from "@ant-design/pro-layout";
 import { Link, useLocation } from "react-router-dom";
 import { Avatar, Menu } from "antd";
@@ -37,10 +37,26 @@ const menuData: MenuDataItem[] = [
 const SideBar: React.FC = () => {
   const location = useLocation();
   const [collapsed, setCollapsed] = useState(true);
+  const [mobile, setMobile] = useState(window.innerWidth <= 768);
 
   const handleCollapse = () => {
     setCollapsed(!collapsed);
   };
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      if (window.innerWidth <= 768) {
+        setMobile(true);
+      }
+      else{
+        setMobile(false);
+      }
+    };
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   const menuItemRender = (item: MenuDataItem) => (
     <Menu.Item key={item.path}>
@@ -61,7 +77,11 @@ const SideBar: React.FC = () => {
         <div className="sidebar-brand">
           <div className="brand-logo">
             <img src={logo} alt="logo" width={30} height={30} />
-            {!collapsed && <h1 className="brand-name">Adore</h1>}
+            {mobile ? (
+              <h1 className="brand-name">Adore</h1>
+            ) : (
+              !collapsed && <h1 className="brand-name">Adore</h1>
+            )}
           </div>
         </div>
       )}

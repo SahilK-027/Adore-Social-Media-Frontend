@@ -7,7 +7,7 @@
 
         .brand-name {
             color: #000;
-            margin-left: 3px;
+            margin-left: 6px;
         }
     }
 }
@@ -147,4 +147,19 @@
 
 .ant-avatar{
     background: #1f2937 !important;
+}
+
+@media (max-width: 768px) {
+    .ant-layout-sider{
+        padding: 10px;
+    }
+    .brand-logo{
+        padding: 12px 0px;
+    }
+    .sidebar-footer{
+        position: fixed;
+        bottom: 0;
+        width: 236px;
+        background: #fff;
+    }
 }
