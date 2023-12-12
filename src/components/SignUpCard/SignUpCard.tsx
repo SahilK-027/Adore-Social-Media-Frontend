@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/icon.png";
+import logo from "../../assets/icon.svg";
 import "./SignUpCard.scss";
 
 const SignUpCardTitle = () => {
@@ -49,10 +49,12 @@ const SignUpCard = () => {
   return (
     <div className="signup-page-container">
       <div className="signup-page-header">
-        <div className="signup-page-logo">
-          <img src={logo} alt="logo" width={30} height={30} />
-          <h1 className="brand-name">Adore</h1>
-        </div>
+        <Link to="/">
+          <div className="signup-page-logo">
+            <img src={logo} alt="logo" width={30} height={30} />
+            <h1 className="brand-name">Adore</h1>
+          </div>
+        </Link>
       </div>
 
       <div className="signup-card">

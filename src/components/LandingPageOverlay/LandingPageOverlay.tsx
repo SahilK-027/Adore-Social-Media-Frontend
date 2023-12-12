@@ -2,16 +2,18 @@ import { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 import { Link } from "react-router-dom";
 import GradientEffect from "../GradientEffect/GradientEffect";
-import logo from "../../assets/icon.png";
+import logo from "../../assets/icon.svg";
 import "./LandingPageOverlay.scss";
 
 const LandingPageHeader = () => {
   return (
     <div className="landing-page-header">
-      <div className="landing-page-logo">
-        <img src={logo} alt="logo" width={30} height={30} />
-        <h1 className="brand-name">Adore</h1>
-      </div>
+      <Link to="/">
+        <div className="landing-page-logo">
+          <img src={logo} alt="logo" width={30} height={30} />
+          <h1 className="brand-name">Adore</h1>
+        </div>
+      </Link>
       <div className="landing-page-login-signup-btn">
         <Link to="/login">
           <button className="landing-page-login-btn"> Log In </button>

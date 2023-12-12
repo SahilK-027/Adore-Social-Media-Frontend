@@ -1,5 +1,5 @@
 import "./LoginCard.scss";
-import logo from "../../assets/icon.png";
+import logo from "../../assets/icon.svg";
 import { Link } from "react-router-dom";
 
 const LoginCardTitle = () => {
@@ -11,9 +11,7 @@ const LoginCardTitle = () => {
       <div className="login-card-title">
         <h4>Log in to Adore</h4>
       </div>
-      <p className="login-description">
-        Share the moments with few clicks.
-      </p>
+      <p className="login-description">Share the moments with few clicks.</p>
     </div>
   );
 };
@@ -43,14 +41,15 @@ const LoginForm = () => {
 };
 
 const LoginCard = () => {
-
   return (
     <div className="login-page-container">
       <div className="login-page-header">
-        <div className="login-page-logo">
-          <img src={logo} alt="logo" width={30} height={30} />
-          <h1 className="brand-name">Adore</h1>
-        </div>
+        <Link to="/">
+          <div className="login-page-logo">
+            <img src={logo} alt="logo" width={30} height={30} />
+            <h1 className="brand-name">Adore</h1>
+          </div>
+        </Link>
       </div>
 
       <div className="login-card">

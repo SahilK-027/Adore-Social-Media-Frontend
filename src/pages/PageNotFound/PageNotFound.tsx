@@ -1,8 +1,8 @@
 import GradientEffect from "../../components/GradientEffect/GradientEffect";
 import PageBg from "../../components/PageBg/PageBg";
-import logo from "../../assets/logo404.png";
+import logo from "../../assets/logo404.svg";
 import "./PageNotFound.scss";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const PageNotFound = () => {
   return (
@@ -12,10 +12,12 @@ const PageNotFound = () => {
         <GradientEffect />
         <div className="notfound-page">
           <div className="notfound-page-header">
-            <div className="notfound-page-logo">
-              <img src={logo} alt="logo" width={30} height={30} />
-              <h1 className="brand-name">Adore</h1>
-            </div>
+            <Link to="/">
+              <div className="notfound-page-logo">
+                <img src={logo} alt="logo" width={30} height={30} />
+                <h1 className="brand-name">Adore</h1>
+              </div>
+            </Link>
           </div>
           <div className="f404">
             <h1 className="four">4</h1>
