@@ -5,7 +5,14 @@ import "./MyProfile.scss";
 import gradientBG from "../../utils/GradientBG";
 import DemoPosts from "./DemoPosts";
 import PostCard from "../../components/PostCard/PostCard";
+import EditProfile from "./EditProfile";
+import { useState } from "react";
 const MyProfile = () => {
+  const [isEditProfileOpen, setEditProfileOpen] = useState(false);
+
+  const handleEditProfileClose = () => {
+    setEditProfileOpen(false);
+  };
   return (
     <div className="profile-page-container">
       {/* Ant D sidebar */}
@@ -27,7 +34,9 @@ const MyProfile = () => {
               SK
             </Avatar>
 
-            <button>Edit Profile</button>
+            <button onClick={() => setEditProfileOpen(true)}>
+              Edit Profile
+            </button>
           </div>
           <h2>Sayali Kandhare</h2>
           <p className="sub-text">@SayaliKand95658</p>
@@ -39,7 +48,7 @@ const MyProfile = () => {
           <p
             style={{
               borderBottom: "1px solid #e6e6e6",
-              paddingBottom: "10px"
+              paddingBottom: "10px",
             }}
             className="sub-text"
           >
@@ -48,7 +57,9 @@ const MyProfile = () => {
             <i className="fa-regular fa-calendar-days"></i>
             &nbsp;Joined December 2023
           </p>
-          <h2>My Posts</h2>
+          <div className="my-post-title-container">
+            <h3>My Posts</h3>
+          </div>
           <div>
             {DemoPosts.length ? (
               DemoPosts.map((post, idx) => <PostCard key={idx} post={post} />)
@@ -78,6 +89,11 @@ const MyProfile = () => {
           <TrendingPosts />
         </div>
       </div>
+
+      <EditProfile
+        isOpen={isEditProfileOpen}
+        onClose={handleEditProfileClose}
+      />
     </div>
   );
 };

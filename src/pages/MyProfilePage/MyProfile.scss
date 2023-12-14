@@ -51,8 +51,22 @@
                     background-color: rgba(122, 125, 126, 0.155);
                 }
             }
-            .sub-text{
-                color: #536471; 
+
+            .sub-text {
+                color: #536471;
+            }
+
+            .my-post-title-container {
+                width: 20%;
+                padding: 8px 0px;
+                text-align: center;
+                h3{
+                    border-bottom: 3px solid #e85182;
+                    font-weight: 600;
+                    margin: 0;
+                    font-size: 15px;
+                    line-height: 40px;
+                }
             }
         }
 
@@ -68,15 +82,15 @@
     .profile-page-container {
         display: flex;
         flex-direction: column;
-    
+
         .profile-page-right {
             display: flex;
             z-index: 1;
-    
+
             .profile-page-mid {
                 width: 100%;
             }
-    
+
             .trends {
                 display: none;
             }
