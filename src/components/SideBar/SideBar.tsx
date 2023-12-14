@@ -16,17 +16,17 @@ const menuData: MenuDataItem[] = [
   {
     path: "/my-likes",
     name: "My Likes",
-    icon: <i className="icon fa-regular fa-heart"></i>,
-  },
-  {
-    path: "/my-bookmarks",
-    name: "My Bookmarks",
-    icon: <i className="icon fa-regular fa-bookmark"></i>,
+    icon: <i className="fa-solid fa-heart"></i>,
   },
   {
     path: "/my-posts",
     name: "My Posts",
     icon: <i className="icon fa-solid fa-quote-right"></i>,
+  },
+  {
+    path: "/my-bookmarks",
+    name: "My Bookmarks",
+    icon: <i className="icon fa-solid fa-bookmark"></i>,
   },
   {
     path: "/my-profile",
@@ -118,8 +118,12 @@ const SideBar: React.FC = () => {
             )}
           </div>
           <button className="primary-button create-post-btn">
-            {collapsed && <i className="fa-solid fa-right-from-bracket"></i>}
-            {!collapsed && <span> Log out</span>}
+            {<i className="fa-solid fa-feather"></i>}
+            {!collapsed && <span>&nbsp; New Post</span>}
+          </button>
+          <button className="primary-button log-out-btn">
+            {<i className="fa-solid fa-right-from-bracket"></i>}
+            {!collapsed && <span>&nbsp; Log out</span>}
           </button>
         </div>
       )}

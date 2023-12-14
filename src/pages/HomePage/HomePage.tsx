@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
 
-        {/* CDisplay trending posts */}
+        {/* Display trending posts */}
         <div className="trends">
           <TrendingPosts />
         </div>
