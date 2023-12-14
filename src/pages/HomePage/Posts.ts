@@ -3,7 +3,7 @@ const AllPosts = [
     id: 1,
     owner: {
       name: "John Doe",
-      photo: "https://placekitten.com/50/50",
+      photo: 0,
     },
     date: "2023-04-01",
     location: "India",
@@ -22,7 +22,7 @@ const AllPosts = [
     id: 2,
     owner: {
       name: "Jane Smith",
-      photo: "https://placekitten.com/51/51",
+      photo: 1,
     },
     date: "2023-04-02",
     location: "USA",
@@ -41,7 +41,7 @@ const AllPosts = [
     id: 3,
     owner: {
       name: "Alice Johnson",
-      photo: "https://placekitten.com/52/52",
+      photo: 2,
     },
     date: "2023-04-03",
     location: "Canada",
@@ -60,7 +60,7 @@ const AllPosts = [
     id: 4,
     owner: {
       name: "Eva Martinez",
-      photo: "https://placekitten.com/53/53",
+      photo: 3,
     },
     date: "2023-04-04",
     location: "Spain",
@@ -79,7 +79,7 @@ const AllPosts = [
     id: 5,
     owner: {
       name: "Alex Wang",
-      photo: "https://placekitten.com/54/54",
+      photo: 4,
     },
     date: "2023-04-05",
     location: "China",
@@ -98,7 +98,7 @@ const AllPosts = [
     id: 6,
     owner: {
       name: "Sophie Lee",
-      photo: "https://placekitten.com/55/55",
+      photo: 5,
     },
     date: "2023-04-06",
     location: "South Korea",
@@ -117,7 +117,7 @@ const AllPosts = [
     id: 7,
     owner: {
       name: "Mmd Ahmed",
-      photo: "https://placekitten.com/56/56",
+      photo: 6,
     },
     date: "2023-04-07",
     location: "Egypt",
@@ -136,7 +136,7 @@ const AllPosts = [
     id: 8,
     owner: {
       name: "Luis Fernandez",
-      photo: "https://placekitten.com/57/57",
+      photo: 7,
     },
     date: "2023-04-08",
     location: "Brazil",
@@ -155,7 +155,7 @@ const AllPosts = [
     id: 9,
     owner: {
       name: "Maria Rodriguez",
-      photo: "https://placekitten.com/58/58",
+      photo: 8,
     },
     date: "2023-04-09",
     location: "Mexico",
@@ -174,7 +174,7 @@ const AllPosts = [
     id: 10,
     owner: {
       name: "Yuki Tanaka",
-      photo: "https://placekitten.com/59/59",
+      photo: 9,
     },
     date: "2023-04-10",
     location: "Japan",

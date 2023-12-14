@@ -2,7 +2,7 @@ interface PostModel {
   id: number;
   owner: {
     name: string;
-    photo: string;
+    photo: number;
   };
   date: string;
   location: string;

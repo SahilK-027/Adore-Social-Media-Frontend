@@ -89,6 +89,7 @@ const TrendingPosts = () => {
       <div className="post-item-container wrap">
         {topPosts.map((post, index) => (
           <div key={index} className="post-item wrap">
+            <h1 style={{color: "#536471"}}>{"#" + (index + 1)}</h1>
             <div className="post-author">
               {" "}
               <p>{post.author}</p>

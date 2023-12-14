@@ -1,6 +1,8 @@
 import React from "react";
 import "./PostCard.scss";
 import PostModel from "../../models/PostModel";
+import { Avatar } from "antd";
+import gradientBG from "../../utils/GradientBG";
 
 interface PostCardProps {
   post: PostModel;
@@ -23,7 +25,14 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
     <div className="post-card">
       <div className="post-image">
         <div>
-          <img src={owner.photo} alt={owner.name} />
+          <Avatar
+            size={50}
+            style={{
+              backgroundImage: gradientBG[owner.photo],
+            }}
+          >
+            {(owner.name?.[0] + owner.name?.[1])?.toUpperCase()}
+          </Avatar>
         </div>
         <div
           style={{
@@ -66,7 +75,11 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
       <div className="post-content">{content}</div>
 
       <div className="post-tags">
-        {tags.length ? tags.map((tag, idx) => <span key={idx}> {tag}</span>) : <></>}
+        {tags.length ? (
+          tags.map((tag, idx) => <span key={idx}> {tag}</span>)
+        ) : (
+          <></>
+        )}
       </div>
 
       <div className="post-actions">
