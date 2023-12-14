@@ -1,6 +1,7 @@
 import { Avatar } from "antd";
 import gradientBG from "../../utils/GradientBG";
 import { ChangeEvent, useEffect, useState } from "react";
+import "./CreatePost.scss"
 
 const CreatePost = () => {
   const [postContent, setPostContent] = useState<string>("");

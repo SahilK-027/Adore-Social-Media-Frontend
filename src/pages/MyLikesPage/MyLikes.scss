@@ -11,14 +11,40 @@
             width: 60%;
             border-right: 1px solid #e6e6e6;
             padding: 30px;
-            padding-top: 0;
             height: 100vh;
             overflow-y: auto;
+
+            h1 {
+                font-size: 20px;
+                font-weight: 600;
+                color: #000;
+                margin: 0;
+            }
         }
 
         .trends {
             width: 40%;
             padding: 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .likes-page-container {
+        display: flex;
+        flex-direction: column;
+    
+        .likes-page-right {
+            display: flex;
+            z-index: 1;
+    
+            .likes-page-mid {
+                width: 100%;
+            }
+    
+            .trends {
+                display: none;
+            }
         }
     }
 }
