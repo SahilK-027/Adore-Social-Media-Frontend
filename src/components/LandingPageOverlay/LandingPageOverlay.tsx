@@ -18,7 +18,7 @@ const LandingPageHeader = () => {
         <Link to="/login">
           <button className="landing-page-login-btn"> Log In </button>
         </Link>
-        <Link to="/login">
+        <Link to="/sign-up">
           <button className="landing-page-signup-btn"> Sign Up </button>
         </Link>
       </div>
