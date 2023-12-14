@@ -49,7 +49,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                 gap: 3,
               }}
             >
-              <p className="owner-name"> {"@" + owner.name} </p>
+              <p className="owner-name"> {owner.name} </p>
               <p className="post-location">
                 <i className="fa-solid fa-location-dot"></i> {location}
               </p>
