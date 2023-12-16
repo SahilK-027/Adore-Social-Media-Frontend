@@ -58,7 +58,7 @@ const MyPosts: React.FC<MyPostsProps> = () => {
       <SideBar />
       <div className="posts-page-right">
         <div className="posts-page-mid">
-          {/* Display Ant Design Pro Table */}
+          <h1>My Posts</h1>
           <Table
             columns={columns}
             dataSource={DemoPosts}
