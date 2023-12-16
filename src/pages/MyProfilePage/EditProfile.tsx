@@ -10,14 +10,14 @@ interface EditProfileProps {
 const EditProfile: FC<EditProfileProps> = ({ isOpen, onClose }) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
-  const handleClickOutside = (event: MouseEvent) => {
-    console.log(event.target as Node)
-    if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-      onClose();
-    }
-  };
-
   useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      console.log(event.target as Node);
+      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+        onClose();
+      }
+    };
+  
     if (isOpen) {
       // Attach click event listener when the modal is open
       document.addEventListener("mousedown", handleClickOutside);
@@ -25,7 +25,7 @@ const EditProfile: FC<EditProfileProps> = ({ isOpen, onClose }) => {
       // Clean up the event listener when the modal is closed
       document.removeEventListener("mousedown", handleClickOutside);
     }
-
+  
     // Clean up the event listener when the component is unmounted
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
