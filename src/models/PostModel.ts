@@ -11,10 +11,10 @@ interface PostModel {
   bookmarks: number;
   isOwner: boolean;
   tags: string[];
-  comments: Comment[];
+  comments: CommentModel[];
 }
 
-interface Comment {
+export interface CommentModel {
   id: number;
   author: string;
   content: string;

@@ -19,6 +19,11 @@ const menuData: MenuDataItem[] = [
     icon: <i className="fa-solid fa-heart"></i>,
   },
   {
+    path: "/my-posts",
+    name: "My Posts",
+    icon: <i className="icon fa-solid fa-quote-right"></i>,
+  },
+  {
     path: "/my-bookmarks",
     name: "My Bookmarks",
     icon: <i className="icon fa-solid fa-bookmark"></i>,

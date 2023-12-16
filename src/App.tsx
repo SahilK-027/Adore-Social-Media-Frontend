@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import MyLikes from "./pages/MyLikesPage/MyLikes";
 import MyBookMarks from "./pages/MyBookMarksPage/MyBookMarks";
 import MyProfile from "./pages/MyProfilePage/MyProfile";
+import MyPosts from "./pages/MyPosts/MyPosts";
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Route path="/sign-up" element={<SignUpPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/my-likes" element={<MyLikes />} />
+        <Route path="/my-posts" element={<MyPosts />} />
         <Route path="/my-bookmarks" element={<MyBookMarks />} />
         <Route path="/my-profile" element={<MyProfile />} />
 
