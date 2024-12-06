@@ -123,7 +123,7 @@ const SideBar: React.FC = () => {
                   >
                     Logged in as:{" "}
                   </p>
-                  <p className="userName">@sayalikandhare</p>
+                  <p className="userName">@stevenkeller183</p>
                 </div>
               )}
             </div>

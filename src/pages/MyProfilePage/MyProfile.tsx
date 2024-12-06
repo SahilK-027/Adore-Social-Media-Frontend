@@ -38,8 +38,8 @@ const MyProfile = () => {
               Edit Profile
             </button>
           </div>
-          <h2>Sayali Kandhare</h2>
-          <p className="sub-text">@SayaliKand95658</p>
+          <h2>Steven Keller</h2>
+          <p className="sub-text">@stevenkeller183</p>
           <p>
             I AM LEARNING...nvsfj bfuhgbuhrkt fbunrdtiuhruthi urtjoritfgnsurtdgl
             krtgrtuer turtglkrut hkgjdrtfn uhrstdkugkr tugjlrksutu

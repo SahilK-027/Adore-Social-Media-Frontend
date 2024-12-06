@@ -43,6 +43,7 @@
 .ant-menu-item-selected {
     font-weight: bold;
     border-left: 5px solid #e85182;
+    padding: 0 11px !important;
 }
 
 
@@ -146,13 +147,15 @@
 }
 
 @media (max-width: 768px) {
-    .ant-layout-sider{
+    .ant-layout-sider {
         padding: 10px;
     }
-    .brand-logo{
+
+    .brand-logo {
         padding: 12px 0px;
     }
-    .sidebar-footer{
+
+    .sidebar-footer {
         position: fixed;
         bottom: 0;
         width: 236px;

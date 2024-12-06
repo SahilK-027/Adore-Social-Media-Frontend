@@ -14,7 +14,7 @@ const MyLikes = () => {
       <div className="likes-page-right">
         <div className="likes-page-mid">
           <h1>Likes</h1>
-          <p>@sayalikandhare</p>
+          <p>@stevenkeller183</p>
 
           {LikedPosts.length ? (
             LikedPosts.map((post, idx) => <PostCard key={idx} post={post} />)

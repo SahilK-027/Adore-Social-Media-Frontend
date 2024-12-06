@@ -14,7 +14,7 @@ const MyBookMarks = () => {
       <div className="bookmark-page-right">
         <div className="bookmark-page-mid">
           <h1>Bookmarks</h1>
-          <p>@sayalikandhare</p>
+          <p>@stevenkeller183</p>
 
           {BookmarkPosts.length ? (
             BookmarkPosts.map((post, idx) => <PostCard key={idx} post={post} />)
